@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="blida_standard.net.xml"/>
+        <route-files value="routes_peak.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1"/>
+    </time>
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+    <output>
+        <tripinfo-output value="../data/tripinfo_peak.xml"/>
+        <summary-output value="../data/summary_peak.xml"/>
+    </output>
+</configuration>

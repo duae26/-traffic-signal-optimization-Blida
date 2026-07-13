@@ -1,0 +1,17 @@
+# Our 9 controlled traffic light intersections in Blida
+TLS_IDS = [
+    "joinedS_1172439356_1449025137_1705550907_1705550924",
+    "joinedS_1172438657_1172438750_1172439087_1172439152",
+    "joinedS_1788379490_1788379515_1788379518_1992455088",
+    "joinedS_1172439370_1449582288_1449582291",
+    "joinedS_1172439017_1172439200_1775940261",
+    "joinedS_1172438944_1172439108_1172439257",
+    "joinedS_1703161233_1775910833_1775940290",
+    "joinedS_1449025102_1703184930_1775910835",
+    "joinedS_11328467968_11328558873_11328558875_1788396563",
+]
+
+NUM_INTERSECTIONS = 9
+NET_FILE    = "sumo_network/blida_standard.net.xml"
+ROUTE_FILE  = "sumo_network/blida_medium.rou.xml"
+CONFIG_FILE = "sumo_network/blida_medium.sumocfg"
