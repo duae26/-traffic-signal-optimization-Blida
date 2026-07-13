@@ -59,3 +59,39 @@ python generate_results.py
 ---
 
 ## Project Structure
+├── src/
+│   ├── utils/          # TraCI interface, fitness function, TLS IDs
+│   ├── lstm/           # LSTM predictor module
+│   ├── woa/            # Whale Optimization Algorithm
+│   ├── hho/            # Harris Hawks Optimization (with signed fix)
+│   └── ga/             # Genetic Algorithm (reactive benchmark)
+├── models/             # Trained LSTM weights and scalers
+├── sumo_network/       # Blida road network and scenario configs
+├── results/            # Figures and statistical summary
+├── controller.py       # Rolling horizon control loop
+├── run_experiment.py   # Main experiment runner
+├── run_5x.py           # Statistical validation
+└── generate_results.py # Results visualization
+---
+
+## Network
+
+The road network covers the Bab Dzair district of Blida city center
+(36.4670°N–36.4745°N, 2.8250°E–2.8360°E), extracted from
+OpenStreetMap using SUMO's netconvert tool.
+
+9 signalized intersections selected from 95 detected junctions.
+
+---
+
+## Citation
+
+If you use this code in your research, please cite:
+[Boulmaali Douaa Nesrine][Djerroud Manar], "A Hybrid Predictive Meta-Heuristic Framework for
+Dynamic Traffic Signal Optimization in Multi-Intersection Networks",
+M2 Thesis, University of yahia fares medea, Algeria, 2026.
+---
+
+## License
+
+MIT License — see LICENSE file.
